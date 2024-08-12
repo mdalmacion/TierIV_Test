@@ -1,6 +1,6 @@
 # TierIV_Test: Assignment for TierIV Application
 
-<b>Twitch.tvの「登録」リンクを検証するテスト</b>
+<b>PythonおよびSeleniumでTwitch.tvの「登録」リンクを検証するテスト</b>
 
 <b>テスト条件</b>
 - <b>必須なソフトエア、パッケージ</b>
