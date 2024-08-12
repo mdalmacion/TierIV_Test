@@ -1,16 +1,16 @@
 # TierIV_Test: Assignment for TierIV Application
 
-<b>Twitch.tvのユーザーメニュー内のリンクを検証するテスト</b>
+<b>Twitch.tvの「登録」リンクを検証するテスト</b>
 
 <b>テスト条件</b>
-- <b>必須なソフトエア</b>
+- <b>必須なソフトエア、パッケージ</b>
   - Google Chrome、互換性しているChromedriver
   - Python　3以降
-  ー Selenium
-- Google Chromeの表示言語は「日本語」になっていること
-
+  - Selenium
+  - PageFactory、Unittest
+<br>
 
 | ソース名  | テスト内容 | テスト手順 | 期待値 |
 | ------------- | ------------- |------------- |------------- |
-| TierIV_001.py  | ユーザー登録機能を開く |1.ユーザーメニューアイコンをクリックする<br>2.「ログイン」をクリックする<br>3.「アカウントがない場合　登録」ボタンをクリックする<br>4.「Twitchに登録しよう」というのポップアップウインドウが出ることを確認する |　「Twitchに登録しよう」ポップアップウインドウが出ること |
-| TierIV_002.py  | 言語のメニューを開く |1.ユーザーメニューアイコンをクリックする<br>2.「言語」をクリックする<br>3.言語の一覧が表示されることを確認する |　ユーザーメニューアイコで言語の一覧が表示されること |
+| TierIV_001.py  | 「ログイン」ボタンで登録ウインドウを開く |1.「Log In」ボタンをクリックする<br>2.「Don't have an account? Sign up」ボタンをクリックする<br>3.「Join Twitch today」というのポップアップウインドウが出ることを確認する |　「Join Twitch today」ポップアップウインドウが出ること |
+| TierIV_002.py  | 「登録」ボタンを検証 |1.「Sign Up」ボタンをクリックする<br>2.「Join Twitch today」というのポップアップウインドウが出ることを確認する<br>3.Username、Passwordフィールドを入力する|1.Username,Passwordフィールドを入力できること<br>2.「Join Twitch today」というのポップアップウインドウが出ることを確認する  |
