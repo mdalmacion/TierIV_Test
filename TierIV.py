@@ -39,7 +39,7 @@ class TestCases(unittest.TestCase):
     success_keyword = "Join Twitch today"
     start_url = "https://twitch.tv"
     
-    def test_new_user(self):
+    def test_register(self):
         chrome_options = Options()
         chrome_options.add_argument("--headless=new") # for Chrome >= 109
         chrome_options.add_argument("--incognito");
@@ -53,7 +53,7 @@ class TestCases(unittest.TestCase):
         self.assertTrue(self.success_keyword in driver.page_source)
         driver.close()
 
-    def test_Login(self):
+    def test_signup(self):
         chrome_options = Options()
         chrome_options.add_argument("--headless=new") # for Chrome >= 109
         chrome_options.add_argument("--incognito");
@@ -69,8 +69,8 @@ class TestCases(unittest.TestCase):
 
 def Suite():
     suiteTest = unittest.TestSuite()
-    suiteTest.addTest(TestCases("test_Login"))
-    suiteTest.addTest(TestCases("test_new_user"))
+    suiteTest.addTest(TestCases("test_register"))
+    suiteTest.addTest(TestCases("test_signup"))
 
     return suiteTest
 
